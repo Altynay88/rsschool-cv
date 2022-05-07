@@ -21,7 +21,7 @@
 ### Skills
 
 - HTML
-- CSS3, SCSS, BEM, Bootstrap
+- CSS3, SCSS, Bootstrap
 - JavaScript
 - Git, Github
 - React JS
