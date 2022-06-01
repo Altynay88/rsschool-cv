@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Arimo';
+    color: rgba(69, 75, 115, 1);
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 28px;
+}
+
+.wrapper-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 30px 90px 0 90px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.cv__img {
+    height: 250px;
+    background-image: url('img/bg-img.png');
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+.my-img {
+    height: 185px;
+    width: 185px;
+    margin-left: 85px;
+    margin-top: 45px;
+}
+
+.header__info {
+    width: 60%;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+.header-li {
+    list-style-type: none;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-li {
+    list-style-type: none;
+}
+
+.header__li {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 55px;
+    color: rgba(69, 75, 115, 1);
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.header__li:hover {
+    opacity: 1;
+}
+
+.header__main {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-left: 80px;
+
+}
+
+.header__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header__contacts {
+    background-color: rgba(251, 214, 215, 1);
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.mail::before {
+    content: "";
+    background-image: url("img/mail.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.phone::before {
+    content: "";
+    background-image: url("img/phones.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Arimo';
+    color: rgba(69, 75, 115, 1);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.main__left {
+    width: 60%;
+}
+
+.education,
+.work-experience,
+.skills,
+.languages,
+.code-example,
+.objective {
+    padding-bottom: 30px;
+}
+
+.main__titles {
+    font-weight: 400;
+    border: 3px solid rgba(220, 226, 242, 1);
+    width: 170px;
+    text-align: center;
+    background-image: url('img/profile-vector-pink.png');
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.main__subtitles {
+    width: 80%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.main__titles-long {
+    font-weight: 400;
+    border: 3px solid rgba(220, 226, 242, 1);
+    width: 250px;
+    text-align: center;
+    background-image: url('img/profile-vector.png');
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.main__right {
+    width: 40%;
+}
+
+.main-li {
+    line-height: 28px;
+}
+
+.blue-short {
+    width: 150px;
+}
+
+.skills-ul {
+    padding-left: 5px;
+
+}
+
+.lang-p {
+    background-color: rgba(220, 226, 242, 1);
+    padding: 5px;
+    padding-left: 70px;
+    margin-bottom: 20px;
+    width: 250px;
+    display: flex;
+    border: 1px solid #454B73;
+    border-radius: 100px;
+}
+
+.lang-p::after {
+    content: '100%';
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.russian {
+    background-color: rgba(251, 214, 215, 1);
+    padding-left: 70px;
+}
+
+.english {
+    background: linear-gradient(to right, rgba(220, 226, 242, 1)90%, white 10%);
+    padding-left: 70px;
+}
+
+.english::after {
+    content: '90%';
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.chinese {
+    background: linear-gradient(to right, rgba(251, 214, 215, 1)50%, white 50%);
+    padding-left: 70px;
+}
+
+.chinese::after {
+    content: '50%';
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+    line-height: 28px;
+}
+
+.pink-bc {
+    background-image: url('img/profile-vector-pink.png');
+}
+
+.hobbies-img {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.hobbies-img-inner {
+    width: 60px;
+    height: 60px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-list-inner {
+    display: flex;
+}
+
+.project-list-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    background-color: rgba(220, 226, 242, 1);
+    margin-top: 40px;
+
+}
+
+.wrapper {
+    margin-top: 25px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+.footer-year {
+    width: 80px;
+    margin-right: 250px;
+    margin-top: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.footer-rs {
+    margin-top: 10px;
+    width: 80px;
+    margin-left: 250px;
+}
