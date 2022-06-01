@@ -36,6 +36,7 @@ function noSpace(x){
 return x.split('').filter((space)=>space.trim()!='').join('');
 }
 
+
 ```
 
 ---
